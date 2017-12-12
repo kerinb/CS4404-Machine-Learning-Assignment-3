@@ -9,15 +9,19 @@ The frame work we are using is sci-kit (sk) learn
 
 """
 import LinearRegression
-
+import K_meansClustering
+import numpy as np
+import pandas as p
 
 
 def main():
     print("in main function")
 
-    # TODO - Step1: Read in data from 'Data/winequality-white.csv' TODO - Step2: do what ever (pre)processing we need
-    #  - ideally we may need to do feature selection, so we should use the Cross Validation to find out what features
-    #  are most important, but I reckon that all features will be relatively import to the output results
+    data = p.read_csv('winequality_white.csv', delimiter=';')
+    X = data[:-1].values
+    y = data[data.columns[[-1]]].values
+
+    LinearRegression
     # TODO - Step3: call the functions written and stored in 'LinearRegression/LinearRegression.py' and
     # 'K_meansClustering/K_meansClustering.py'
     # TODO -  Step3.5: Calculate whatever metrics we need, accuracy_score, RMSE etc etc, when theyre calculated, store
