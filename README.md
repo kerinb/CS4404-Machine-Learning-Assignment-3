@@ -85,3 +85,5 @@ with pre-processing the data, possibly by applying data normalisation prior to t
 In an ideal world, another possibility that could allow us to obtain a better result would be to get a larger data set, which,
 at the moment is un-attainable.... Maybe we could become Sommeliers and make our own data set??
 
+![Alt text](https://bitbucket.org/cs4404/cs4404_assignment3/src/lin_reg plot CV 10fold VS y.png)
+![Alt text](https://bitbucket.org/cs4404/cs4404_assignment3/src/svr plot CV 10fold VS y.png)
