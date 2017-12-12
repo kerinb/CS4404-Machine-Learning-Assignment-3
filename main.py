@@ -1,13 +1,3 @@
-"""
-This function will be used to call both algorithms; Linear Regression and K-Means Clustering.
-The Data set we a re working with is winequality_white.csv
-The metrics we are using to evaluate our algorithms are:
-Linear Regression:
-K-Means Clustering:
-
-The frame work we are using is sci-kit (sk) learn
-
-"""
 import LinearRegression
 import SupportVectorRegression
 import numpy as np

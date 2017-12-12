@@ -12,7 +12,7 @@ class SupportVectorRegression:
         self.y = y
         self.XTrain, self.XTest, self.yTrain, self.yTest = train_test_split(X, y, test_size=0.3, random_state=6)
         scaler = StandardScaler().fit(self.XTrain)
-        clf = SVR(kernel="rbf", C=10, epsilon=0.25)
+        clf = SVR(kernel="rbf", C=10, epsilon=0.2)
         self.svr_ = clf.fit(scaler.transform(self.XTrain), self.yTrain)
         self.pred = clf.predict(scaler.transform(self.XTest))
         # y_rand = np.random.randint(11, size=len(y_test))
