@@ -14,17 +14,26 @@ import numpy as np
 import pandas as p
 
 
+def k_means_clustering(X, y):
+    k_m_c = K_meansClustering.K_meansClustering(X, y)
+    k_m_c.k_means_clustering_wine()
+
+
+def linear_regression(X, y):
+    l_r = LinearRegression.LinearRegression(X, y)
+    l_r.linear_regression_wine()
+
+
 def main():
     print("in main function")
 
     data = p.read_csv('winequality_white.csv', delimiter=';')
-    X = data[:-1].values
+    X = data[data.columns[:-1]].values
     y = data[data.columns[[-1]]].values
 
-    K_meansClustering
+    k_means_clustering(X, y)
+    linear_regression(X, y)
 
-    # TODO - Step3: call the functions written and stored in 'LinearRegression/LinearRegression.py' and
-    # 'K_meansClustering/K_meansClustering.py'
     # TODO -  Step3.5: Calculate whatever metrics we need, accuracy_score, RMSE etc etc, when theyre calculated, store
     # them in 'ResultsFromAlgorithms/Results.csv'
     # TODO -  Step4: make graphs of data; Do that on python or Excel? TBC
