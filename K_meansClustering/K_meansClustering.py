@@ -2,12 +2,10 @@ import sklearn
 
 
 class K_meansClustering:
-    def __init__(self):
+    def __init__(self, X, y):
+        print('in KMS init bruv...')
+        self.X = X
+        self.y = y
+
+    def k_means_clustering_wine(self):
         pass
-    # TODO - Imeplement Linear Regression and determine a couple of metrics
-
-
-def main():
-    pass
-
-main()
