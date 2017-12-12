@@ -52,7 +52,7 @@ def determine_features_to_use(dataset):
         if abs(r2) > 0.001:
             features_to_use.append(i)
 
-    print("Pearson correlation coefficients with quality")
+    print("Pearson correlation coefficients")
     print("Fixed Acidity: ", pearsonr(lst[0], lst[11]))
     print("Volatile Acidity: ", pearsonr(lst[1], lst[11]))
     print("Citric Acid: ", pearsonr(lst[2], lst[11]))
