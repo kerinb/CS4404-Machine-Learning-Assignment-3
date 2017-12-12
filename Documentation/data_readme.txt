@@ -72,4 +72,3 @@ Citation Request:
    12 - quality (score between 0 and 10)
 
 8. Missing Attribute Values: None
-

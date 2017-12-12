@@ -8,8 +8,7 @@ K-Means Clustering:
 The frame work we are using is sci-kit (sk) learn
 
 """
-import sys
-sys.path.append("..")
+import LinearRegression
 
 
 
