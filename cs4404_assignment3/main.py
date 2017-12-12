@@ -8,10 +8,9 @@ K-Means Clustering:
 The frame work we are using is sci-kit (sk) learn
 
 """
-import sklearn
-import LinearRegression
-import K_meansClustering
-import Data
+import sys
+sys.path.append("..")
+
 
 
 def main():
