@@ -31,7 +31,7 @@ def main():
     X = data[data.columns[:-1]].values
     y = data[data.columns[[-1]]].values
 
-    k_means_clustering(X, y)
+    # k_means_clustering(X, y)
     linear_regression(X, y)
 
     # TODO -  Step3.5: Calculate whatever metrics we need, accuracy_score, RMSE etc etc, when theyre calculated, store

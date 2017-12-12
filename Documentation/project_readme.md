@@ -7,6 +7,8 @@ Python Version: 3.5.2
 Numpy
 Pandas
 scipy
+matplotlib
+python3-tk
 
 ### Algorithms ###
 Algorithm1: Linear Regression
