@@ -2,27 +2,27 @@
 ## Assignment 3##
 
 ### Dependencies ###
-sklearn/ sci-kit learn
-Python Version: 3.5.2
-Numpy
-Pandas
-scipy
-matplotlib
-python3-tk
+* sklearn/ sci-kit learn
+* Python Version: 3.5.2
+* Numpy
+* Pandas
+* scipy
+* matplotlib
+* python3-tk
 
 ### Algorithms ###
-Algorithm1: Linear Regression
-Algorithm2: Support Vector Regression
+* Algorithm1: Linear Regression
+* Algorithm2: Support Vector Regression
 
 ### Metrics ###
-Metric1: R2score
-Metric2: ExplainedVar
-Metric3: MeanAbsoluteError
-Metric4: MeanSquaredError
-Metric5: RootMeanSquaredError
-Metric6: MeanSquaredLogError
-Metric7: MedianAbsoluteError
-Metric8: Accuracy
+* Metric1: R2score
+* Metric2: ExplainedVar
+* Metric3: MeanAbsoluteError
+* Metric4: MeanSquaredError
+* Metric5: RootMeanSquaredError
+* Metric6: MeanSquaredLogError
+* Metric7: MedianAbsoluteError
+* Metric8: Accuracy
 
 ### Code Explained ###
 In the main.py file, the data is read in from the data set; winequality_white.csv, using the <i>load_data_from_csv_file<.i>
@@ -85,3 +85,5 @@ with pre-processing the data, possibly by applying data normalisation prior to t
 In an ideal world, another possibility that could allow us to obtain a better result would be to get a larger data set, which,
 at the moment is un-attainable.... Maybe we could become Sommeliers and make our own data set??
 
+### Graphs ###
+[Alt text](https://bitbucket.org/cs4404/cs4404_assignment3/src/86641b4a9b1ed52d962d79320b38d00e8fce6c63/svr%20plot%20CV%2010fold%20VS%20y.png?at=master&fileviewer=file-view-default)
