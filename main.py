@@ -36,7 +36,6 @@ def main():
     features_to_include = determine_features_to_use(data)
     X = [None] * len(features_to_include)
 
-    print('features:', features_to_include)
     for j in range(len(features_to_include)):
         print(features_to_include.__getitem__(j))
         X[j] = [
