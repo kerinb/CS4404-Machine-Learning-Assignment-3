@@ -67,7 +67,7 @@ def neural_network():
 
     # Applying Neural Network to train the model using cross validation
 
-    mlp = MLPClassifier(hidden_layer_sizes=(100,), max_iter=30, solver = 'adam', activation='logistic', learning_rate_init=0.05)
+    mlp = MLPClassifier(hidden_layer_sizes=(100,), max_iter=30, solver = 'adam', activation='logistic', learning_rate_init=.01)
 
 
     # Cross validation score
