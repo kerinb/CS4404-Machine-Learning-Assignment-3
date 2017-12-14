@@ -2,6 +2,7 @@ import LinearRegression
 import SupportVectorRegression
 from  Neural import neural_network
 import numpy as np
+from sklearn import preprocessing
 from SharedFunctions import load_data_from_csv_file, determine_features_to_use
 
 
@@ -35,6 +36,10 @@ def main():
     X = np.array(X)
     X = X[:, :, 0].T
     y = np.array([data[i][11] for i in range(len(data))])
+    
+   # scaler = preprocessing.StandardScaler().fit(X)
+   # X = scaler.transform(X)
+  #  print (X.mean(axis=0))
 
     print('x data', X.shape, ' y data', y.shape)
     linear_regression(X, y)
