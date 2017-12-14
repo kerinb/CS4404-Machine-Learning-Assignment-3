@@ -1,5 +1,6 @@
 import LinearRegression
 import SupportVectorRegression
+from  Neural import neural_network
 import numpy as np
 from SharedFunctions import load_data_from_csv_file, determine_features_to_use
 
@@ -22,7 +23,7 @@ def main():
     text_file.write(init)
     text_file.close()
 
-    data = [item for item in load_data_from_csv_file(4898, 'winequality_white.csv')]
+    data = [item for item in load_data_from_csv_file(4898, 'winequality-white.csv')]
     features_to_include = determine_features_to_use(data)
     X = [None] * len(features_to_include)
 
@@ -38,6 +39,7 @@ def main():
     print('x data', X.shape, ' y data', y.shape)
     linear_regression(X, y)
     support_vector_regression(X, y)
+    neural_network()
 
 
 main()
